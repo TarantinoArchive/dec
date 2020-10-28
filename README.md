@@ -1,7 +1,7 @@
 # DEC
 Developer-Easy CMS
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/GianlucaTarantino/databasetify?style=flat-square) ![GitHub](https://img.shields.io/github/license/GianlucaTarantino/databasetify?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/databasetify?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/databasetify?style=flat-square) ![GitHub All Releases](https://img.shields.io/github/downloads/GianlucaTarantino/databasetify/total?style=flat-square)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/GianlucaTarantino/DEC?style=flat-square) ![GitHub](https://img.shields.io/github/license/GianlucaTarantino/DEC?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/decms?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/decms?style=flat-square) ![GitHub All Releases](https://img.shields.io/github/downloads/GianlucaTarantino/DEC/total?style=flat-square)
 - [Description](#very-lightweight-and-simple)
 - [Features](#features)
 - [Installation](#installation)
@@ -61,8 +61,6 @@ Each article URL will be like this: "example.com/article/{article-index}". Artic
     "password": "Password to POST to the database"
 }
 ```
-
-
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. There is already a template for pull requests and issues.
