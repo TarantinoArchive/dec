@@ -1,0 +1,46 @@
+{
+  "name": "dec",
+  "version": "1.0.0",
+  "description": "Developer-Easy CMS",
+  "main": "dec.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GianlucaTarantino/dec.git"
+  },
+  "keywords": [
+    "cms",
+    "js",
+    "javascript",
+    "node",
+    "backend",
+    "server",
+    "serverside",
+    "developer"
+  ],
+  "author": {
+    "name": "Gianluca Tarantino",
+    "email": "gianlutara@gmail.com",
+    "url": "https://gianlucatarantino.github.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GianlucaTarantino/dec/issues"
+  },
+  "homepage": "https://github.com/GianlucaTarantino/dec#readme",
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "bin": {
+    "dec": "./dec.js"
+  }
+}
