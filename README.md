@@ -2,6 +2,7 @@
 Developer-Easy CMS
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/GianlucaTarantino/DEC?style=flat-square) ![GitHub](https://img.shields.io/github/license/GianlucaTarantino/DEC?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/min/decms?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/decms?style=flat-square) ![GitHub All Releases](https://img.shields.io/github/downloads/GianlucaTarantino/DEC/total?style=flat-square)
+
 - [Description](#very-lightweight-and-simple)
 - [Features](#features)
 - [Installation](#installation)
