@@ -30,11 +30,17 @@ if (args[0] === 'serve') {
   app.get('/', (req, res) => {
     res.send(ejs.render(fs.readFileSync('index.ejs', 'utf-8'), {articles: articles, data: {request: req, response: res}, customData: customData}));
   });
-  for (const article of articles) {
-    app.get(`/${article.name}`, (req, res) => {
-      res.send(ejs.renderFile(fs.readFileSync('article.ejs', 'utf-8'), {articles: articles, article: article, data: {request: req, response: res}, customData: customData}));
-    });
-  }
+  app.get(`/article/:index`, (req, res) => {
+    if (!(index in articles)) {
+      if (fs.existsSync('404.ejs')) {
+        res.send(ejs.render(fs.readFileSync('404.ejs', 'utf-8'), {data: {request: req, response: res}, customData: customData}));
+      } else {
+        res.send('404');
+      }
+      return;
+    }
+    res.send(ejs.renderFile(fs.readFileSync('article.ejs', 'utf-8'), {articles: articles, article: articles[index], data: {request: req, response: res}, customData: customData}));
+  });
   app.post('/post/article', (req, res) => {
     if (crypto.createHash('sha256').update(req.body.password).digest('hex') === process.env.PASSWORDCMS) {
       const necessaryKeys = ['title', 'author', 'image', 'tags', 'body'];
